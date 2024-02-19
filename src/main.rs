@@ -5,7 +5,10 @@ mod functions;
 fn main() {
 
     let full_nale  = 
-        functions::get_full_name("Diallo", "Mamadou");
+        functions::name_helpers::get_full_name("Diallo", "Mamadou");
 
-    println!("{}", full_nale);
+    let age = functions::private_fns::get_age(34);
+
+    println!("Full name: {} ==> age: {}", full_nale, age);
+
 }
