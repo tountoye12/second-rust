@@ -2,6 +2,8 @@
 
 mod functions;
 
+mod closures;
+
 fn main() {
 
     let full_nale  = 
@@ -12,5 +14,7 @@ fn main() {
     println!("Full name: {} ==> age: {}", full_nale, age);
 
     functions::give_info("Diallo","Mad", 30 );
+
+    closures::test_closures();
 
 }

@@ -26,7 +26,9 @@ pub fn give_info(first_name :&str, last_name : &str, age: u8) {
     if get_age(age) > 40 {
 
         println!("INFO FOR YOu: {}", info);
-        return;
     }
-    println!("No info for you ");
+    else {
+        
+        println!("No info for you ");
+    }
 }
