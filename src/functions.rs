@@ -1,7 +1,5 @@
 use self::{name_helpers::get_full_name, private_fns::get_age};
 
-
-
 pub mod name_helpers {
 
     pub fn get_full_name(first_name: &str, last_name:&str) -> String {
@@ -31,4 +29,27 @@ pub fn give_info(first_name :&str, last_name : &str, age: u8) {
         
         println!("No info for you ");
     }
+}
+
+
+pub fn largest(list: &[u32]) -> &u32{
+
+    let mut largest = &list[0];
+    for element in list {
+        if element > largest {
+            largest = element;
+        }
+    }
+    largest
+}
+
+pub fn largest_char(list: &[char]) -> &char{
+
+    let mut largest = &list[0];
+    for element in list {
+        if element > largest {
+            largest = element;
+        }
+    }
+    largest
 }
