@@ -11,4 +11,6 @@ fn main() {
 
     println!("Full name: {} ==> age: {}", full_nale, age);
 
+    functions::give_info("Diallo","Mad", 30 );
+
 }
